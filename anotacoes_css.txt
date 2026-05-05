@@ -1,0 +1,193 @@
+### --- CSS --- ###
+
+----- Estrutura:
+seletor{propriedade:valor}
+
+Exs: 
+
+body{color:black}
+
+p{font-family:"sans serif"}
+
+p{
+    text-align:center;
+    color:red;
+
+}
+
+----- Formas de inserir dentro da página html:
+
+1 - folha de estilo externa
+<head>
+    <link rel ="stylesheet" type="text/css" href="mystyle.css"/>
+</head>
+
+-Multiplos documentos html linkados com a folha css
+
+1.1 - estilo externa com import
+
+<head>
+    <style type="text/css">
+         @import url("mystyle.css");
+    </style>
+</head>
+
+<head>
+    <style type="text/css">
+         @import"mystyle.css"
+    </style>
+</head>
+
+2 - Folha de estilo interna (dentro do html)
+
+<head>
+    <style type="text/css">
+         hr{color:siena;}
+         p{margin-left:20px;}
+    </style>
+</head>
+
+- Possui um grau de pioridade maior que a folha de estilo externa
+
+- Muito utilizado coma  folha de estilo externa 
+
+3 - Folhas de estilo inline (dentro do elemento html)
+
+-Possui desvantagens, mistura html e css, fica acoplado, dificulta manutenção
+
+ex: <p style = "color:sienna; margin-left:20px">Paragrafo </p>
+
+----- Prioridades
+
+-Ordem crescente de prioridade (Cascading Order):
+
+1. Definição do navegador (Browser) (menor prioridade)
+2. Folhas de estilo externas
+3. Folhas de estilo internas
+4. Estilo inline (maior prioridade)
+
+----- Agrupamento de elementos
+
+-Usando classes
+-Pode ser usado em múltiplos elementos
+
+<ul>
+    <li class "whitewine"></li>
+</ul>
+
+<ul>
+    <li class "redwine"></li>
+</ul>
+
+-style
+.withewine {color:yellow}
+.withewine {color:red}
+
+-Usando ID
+-Só pode ser usado um unico id para cada elemento
+
+<h1 id="c1s2"></h1>
+
+-style
+
+#c1c2 {color:red;}
+
+-Os elementos <span> e <div> sao elementos genericos que sao usados para
+agrupar e estruturar um documento
+
+<span> - muda algumas palavras
+
+-Enquanto <span> é usado dentro de um elemento no nível de bloco, <div>
+é usado para agrupar um ou mais elementos no nível de bloco
+
+
+----- Modelo de caixa
+
+Propriedades:
+-height e width (altura e largura)
+    --Definidos em px, em (considera a  configuração fonte padrão do navegador), ou %(leva em consideração o tipo de posicionamento dos elementos)
+    --display: afeta elementos block (bloco) apenas, ex: div, p
+
+-border
+    --Largura, estilo, cor (border: 50px, solid red;) -> (border: [width] [style] [color];)
+    
+    As bordas podem ser definidas separadamente, para cada separação deve seguir a sintaxe acima
+    - border-left -> (border: [width] [style] [color];)
+    - border-rigth -> (border: [width] [style] [color];)
+    - border-tipo -> (border: [width] [style] [color];)
+    - border-bottom -> (border: [width] [style] [color];)
+
+-padding
+    -Define o espaçamento interno do conteúdo HTML, ex: texto e bordas
+
+    - padding: 50px, 50px, 50px,50px;
+
+    -Podem ser definidos separadamente:
+    - padding: [top] [left] [bottom] [right];
+    - padding: [top] [left-right] [bottom];
+    - padding: [top-bottom] [left-rigth];
+    - padding: [top-bottom-left-rigth];
+
+-margin
+    -- Margem superior, margem esquerda, margem inferior, margem esquerda (margin: 50px auto 50px auto)
+    
+    -Define o espaçamento entre os elementos que podem aparecer em volta do elemento criado
+    -auto - automática
+
+    -Podem ser definidas separadamente:
+    - margin: [top] [left] [bottom] [right];
+    - margin: [top] [left-right] [bottom];
+    - margin: [top-bottom] [left-rigth];
+    - margin: [top-bottom-left-rigth];
+
+
+
+adicional
+
+-overflow 
+
+    -Define a forma como nosso div vai se comportar quando tiver um conteúdo interno maior que ele
+    -(conteúdo maior que as dimensões definidas no div)
+
+    - overflow:scroll; (rolagem)
+
+    Pode ser definida separadamente com os eixos das ordenadas (overflow-x e overflow-y)
+
+    Valores de overflow:
+    -visible - conteúdo interno apareça ignorando as dimensões do elemento (por ex: sem scroll)
+    -hidden - conteúdo interno desapareça quando for maior
+    -scroll - rolagem
+    -auto - navegador define qual a propriedade dele (normalmente é definido por scroll)
+    -inherit - pede pra herdar a propriedade do elemento pai dele (elemento do qual esse div estiver inserido)
+
+----- display
+
+-Utilizado para controlar a forma de apresentação dos elementos HTML
+
+Conseguimos alterar a forma de apresentação de listas por ex: para apresentar os elementos na mesma linha
+
+    - display: inline; - elementos um do lado do outro sem marcadores 
+    - display: block; - elementos aparecem em formato de bloco
+
+O display suporta diversos valores
+
+O objetivo geral é alterar a forma padrão de apresentação de qualquer elemento HTML
+
+    -Pode ser usado para gerar diversas caixas que ficam uma do lado da outra
+    -ex:
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+
+    div {
+        width: 500px;
+        heigth: 200px;
+        display: inline-block;
+    }
+
+Também pode ser utilizado para fazer um elemento desaparecer:
+    -display:none  - elemento desaparece e não ocupa espaço (deixa de existir)
+
+Outra propriedade que faz o elemento desaparecer:
+    -visibility:hidden - elemento desaparece e ocupa espaço (fica invisivel para os usuários)

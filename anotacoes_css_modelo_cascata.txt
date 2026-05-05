@@ -1,0 +1,104 @@
+-----pseudo-classes e pseudo-elements   
+-São utilizados junto com os seletores para determinar regras mais 
+específicas de elementos
+
+Exs:
+
+body a{
+    display:block;
+    padding:5px;
+    margin:5px;
+    width:30%;
+}
+
+-hover
+
+    body a:hover {
+        background-color:yellow;
+    }
+
+    :hover - pseudo-classe que determina que quando o mouse passar por cima do elemento
+    ele irá ficar amarelo no fundo
+
+-link
+
+-visited
+
+-active
+
+-firts-child
+
+    body a:first-child {
+        background-color:blue;
+    }
+
+    a:first-child - o primeiro elemento dentro do elemento pai será alterado
+
+-focus
+
+-first-letter
+
+    body a:first-letter {
+        font-size:27px;
+    }
+
+    a:first-letter - muda o
+
+
+----- seletores
+
+.class
+#id
+* - seleciona todos elementos
+:psudo-classe
+
+Ordem de prioridade:
+    -Quanto mais específico, maior prioridade
+    -Menos específico, menor prioridade
+
+-Propriedade conhecida como EFEITO CASCATA
+    -As propriedades declaradas com os seletores mais específicos prevalecem
+    
+    -!importante muda esse comportamento, mas isso não é recomendado
+    ex: 
+    .link{
+        background-color:red !important;
+    }
+
+
+----- media-queries
+
+-Utilizada para design responsivo
+-Definir regras de CSS diferentes para diferentes tipos de mídia
+-Reinderiza a página web
+
+<style>
+@media screen - tela do computador
+    p.test{font-family:verdana;} - fonte para pc
+
+@media print - impressão
+    p.test{font-family:bold;} - fonte para impressão
+
+@media screen, print - tela ou impressão
+    p.test{font-weight:bold;} - fonte para impressão
+</style>
+
+-Consulta ao tipo de midia que esta sendo utilizado para ver a página web
+
+-Leva em consideração a largura da tela
+
+-Código único que se adapta a diferentes tipos de dispositivos
+
+ex:
+
+@media screen and(max-width:480px){
+    .boxes{
+        width:300px;
+        float:none;
+        margin:5px;
+        background-color:blue;
+    }
+
+    - define que quando for celular e tiver menos largura de 480 px vai reinderizar dessa maneira
+    - regra masi escífica então sobrescreve a regra inicial
+}

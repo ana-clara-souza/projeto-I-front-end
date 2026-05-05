@@ -1,0 +1,126 @@
+----- display
+
+-Utilizado para controlar a forma de apresentação dos elementos HTML
+
+Conseguimos alterar a forma de apresentação de listas por ex: para apresentar os elementos na mesma linha
+
+    - display: inline; - elementos um do lado do outro sem marcadores 
+    - display: block; - elementos aparecem em formato de bloco
+
+O display suporta diversos valores
+
+O objetivo geral é alterar a forma padrão de apresentação de qualquer elemento HTML
+
+    -Pode ser usado para gerar diversas caixas que ficam uma do lado da outra
+    -ex:
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+
+    div {
+        width: 500px;
+        heigth: 200px;
+        display: inline-block;
+    }
+
+Também pode ser utilizado para fazer um elemento desaparecer:
+    -display:none  - elemento desaparece e não ocupa espaço (deixa de existir)
+
+Outra propriedade que faz o elemento desaparecer:
+    -visibility:hidden - elemento desaparece e ocupa espaço (fica invisivel para os usuários)
+
+----- float
+
+-É utilizada para estabelecer elementos que podem ser empurrados para os lados (direita ou esquerda)
+
+-Os elementos inseridos depois do elemento flutuante vão flutuar ao redor do elemento flutuante
+
+-Os elementos inseridos antes do elemento flutuante não são afetados
+
+-Muito utilizado em web sites que tem noticias
+
+-Utilizado para por caixinhas uma do lado da outra
+
+float:left;
+float:right
+
+Propriedade associada ao float:
+
+-clear:both; - elemenstos criados após ele não irão mais flutuar
+
+
+----- position
+
+#name {position: fixed}
+
+    -Define a forma como posicionamos os elementos dentro da nossa página
+
+Propriedades utilizadas para definir posicionamento:
+
+Position:
+
+Absolute
+    - O elemento é posicionado relativamente ao primeiro pai que possua posição não estática
+    - Não ocupam espaço dos elementos estáticos
+
+    -é abolsuto em relação ao primeiro pai que não tem posicionamento estático
+
+Fixed
+    -Elemento posicionado de acordo com a janela do navegador
+    -Mesmo com a movimentação do scrool da janela do browser, o elemento não muda de posição
+    -não ocupam espaço de elementos na posição estática, os outros elementos se comportam como se ele não estivesse na tela
+
+    -Muito utilizado em menus
+
+
+relative
+    -Define a posição dele de acordo com a posição normal dele (estatica)
+    -Ocupam espaço dos elementos estáticos
+
+    -Leva em consideração o posicionamento estático e desloca o elemento considerando esse posicionamento
+
+static
+    -Forma padrão, os elementos são posicionados de acordo com a ordem de inserção na página
+    -não sao afetados por Top, bottom, left, right (o elemento não será movimentado)
+
+inherit(herdado)
+
+Top, bottom, left, right - Normalmente atribuídos com um tamanho em porcentagem px ou em
+
+-As propriedade de height e width também são afetadas pelo tipo de posicionamento do elemento, quando utilizando dimensões relativas, como pode ex:
+    -width:100%
+    -height:40%
+
+z-index
+    -Serve para inverter o posicionamento de um elemento em relação ao outro
+    -por exemplo: inverter a ordem de aparição de duas divs
+
+    z-index:1; - aumenta a ordem de prioridade do elemento
+
+    -valor padrão é 0, pode ser definido tanto por número positivo quanto negativo
+
+    Para a propriedade z-index funcionar é necessário que os elementos estejam no mesmo nível de herarquia do código html e ter um tipo de posicionamento similar
+
+
+
+-----Flexbox
+-funciona para os elementos dentro da div
+
+.flexbox {display: flex;}
+.box {flex-glow:1} - proporção que será ocupado
+
+-Outra forma de gerar posicionamento nas páginas HTML
+-Muito utilizado em dispositos moveis
+
+-permite controlar os componentes como se fossem caixas de tamanhos flexíveis
+
+-os elementos criados dentro da div se ajustam proporcionalmente
+
+flex-direction:column (ou row) - direção que irá ocupar
+
+flex -wrap: wrap; - quando um elemnto atinger o tamnaho total do flexbox, faz os elementos serem jogados para baixo
+
+alinhamento:
+justify-content:center; - centralizar conforme o eixo horizontal
+align-content: center; - centralizar conforme o eixo vertical
