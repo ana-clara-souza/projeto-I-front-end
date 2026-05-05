@@ -111,6 +111,11 @@
         }
 
         .icone-pesquisa {
+            width: 26px;
+            height: 26px;
+            display: inline-block;
+            vertical-align: middle;
+            border:2px;
             
         }
 
@@ -122,21 +127,41 @@
         }
 
         .chevron-down {
-            width: 10px;
-            height: 10px;
-            filter: brightness(0) invert(1);
+            width: 14px;
+            height: 14px;
             display: inline-block;
             vertical-align: middle;
         }
 
         .pixel-user-white{
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             display: inline-block;
             vertical-align: middle;
             margin: 3px;
         }
 
+        @media only screen and (max-width:767px){
+            .menu,.menu2{display:none;}
+            .back-video {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                height: 100%;
+                max-height: 60vh;
+                min-width: 325px;
+                margin-top: 80px;
+            } 
+
+            .text {
+                position: static;
+                width: 90%;        /* 🔥 responsivo */
+                margin: 20px auto;
+                box-sizing: border-box; /* 🔥 evita estourar com padding */
+            }
+        }
     </style>
 </head>
 <body>
@@ -165,8 +190,8 @@
                 <li class="comprar">COMPRAR AGORA
                     <img src="pixel-chevron-down-green.svg" class="chevron-down" alt="">
                 </li>
-                <li class="icone-pesquisa">
-                    <img src="icon-search.svg" width="20" alt="">
+                <li>
+                    <img src="icon-search.svg" class="icone-pesquisa">
                     <img src="icon-chevron-down.svg" class="chevron-down" alt="">
                 </li>
                 <li class="conta">
@@ -181,10 +206,11 @@
             <source src="video.mp4" type="video/mp4">
         </video>
 
-        <div class="black-box-1"></div>
-        <div class="black-box-2"></div>
-
         <div class="text">
+            <div class="boxs">
+                <div class="black-box-1"></div>
+                <div class="black-box-2"></div>
+            </div>
             <h2>O lançamento Tiny takeover</h2>
             <p>Novas versões de mobs bebês estão causando uma sobrecarga de fofura por todos os biomas e construções. Colecione, abrace e encante-se com nossos novos pequenos danadinhos.</p>
         </div>
