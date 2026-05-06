@@ -1,0 +1,9 @@
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo hexagonal verde -->
+  <path d="M9.5 1H28.5L37 19L28.5 37H9.5L1 19L9.5 1Z" fill="#3A7D23"/>
+
+  <!-- Linhas brancas do menu hambúrguer -->
+  <rect x="12" y="13" width="14" height="2.2" fill="white"/>
+  <rect x="12" y="18" width="14" height="2.2" fill="white"/>
+  <rect x="12" y="23" width="14" height="2.2" fill="white"/>
+</svg>

@@ -1,3 +1,0 @@
-<meta name="viewport" content="width=device-width", initial-scale=1/>
-
-faz com que os elementos diminuam em vez de dar zoom na tela quando vai pra mobile
