@@ -65,7 +65,7 @@ a {
 header {
   width: 100%;
   min-height: 92px;
-  padding: 0 28px;
+  padding: 28px 40px 28px 40px;
 
   background-color: #242120;
   border-bottom: 1px solid #111;
@@ -73,6 +73,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 /*
@@ -179,6 +180,7 @@ header {
   display: none;
   align-items: center;
   gap: 12px;
+  
 }
 
 /*
@@ -216,24 +218,24 @@ header {
 */
 .icone-menu {
   width: 38px;
-  height: 38px;
+  height: 34px;
   display: block;
 }
 
 /* sessão do vídeo
 
 /*
-  Section principal do banner.
+  Section principal do banner
 */
 .banner {
-  width: calc(100% - 28px);
+  width: 100%;
   margin: 0 auto;
   background-color: #111;
   overflow: hidden;
 }
 
 /*
-  Caixa que segura o vídeo.
+  Caixa que segura o vídeo
 */
 .video-box {
   width: 100%;
@@ -286,7 +288,6 @@ header {
 
 /*
   Parte inferior do banner.
-  Mantive o nome hero-bottom porque foi o nome usado na estrutura anterior.
 */
 .hero-bottom {
   margin-top: -190px;
@@ -297,66 +298,29 @@ header {
 
 /*
   Caixa preta de texto.
-  Mantive o nome original .text.
 */
 .text {
   width: 480px;
   background-color: #111111;
 
-  padding: 58px 28px 26px;
+  padding: 45px 28px 45px 28px;
   margin-left: 250px;
 
   position: relative;
+  border-top: 4px solid #313131;
 }
 
 /*
   Agrupamento dos quadradinhos.
   Mantive o nome original .boxs.
 */
-.boxs {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/*
-  Primeiro quadrado preto superior.
-  Mantive o nome original .black-box-1.
-*/
-.black-box-1 {
-  position: absolute;
-
-  top: -44px;
-  right: 98px;
-
-  width: 92px;
-  height: 44px;
-
-  background-color: #111111;
-}
-
-/*
-  Segundo quadrado preto superior.
-  Mantive o nome original .black-box-2.
-*/
-.black-box-2 {
-  position: absolute;
-
-  top: -22px;
-  right: 54px;
-
-  width: 44px;
-  height: 22px;
-
-  background-color: #111111;
-}
 
 /*
   Área do título.
 */
 .titulo-box {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 /*
@@ -372,7 +336,7 @@ h2 {
     "Arial",
     sans-serif;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   color: white;
   font-weight: normal;
@@ -412,7 +376,7 @@ p {
     Logo menor no celular
   */
   .logo {
-    width: 95px;
+    width: 170px;
   }
 
   /*
@@ -480,6 +444,7 @@ p {
     margin-left: 0;
     padding: 22px 18px 26px;
     background-color: #111111;
+    border-top: 4px solid #313131;
   }
 
   /*
