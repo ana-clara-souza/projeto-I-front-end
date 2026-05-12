@@ -1,57 +1,41 @@
-/* 
-  RESET GERAL
-  Remove margens e espaçamentos padrões do navegador.
-*/
+/* remove margens e espaçamentos padrões do navegador.*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /*evita estourar layput*/
 }
 
-/*
-  Fonte do Minecraft
- 
-*/
+/*fonte do Minecraft*/
 @font-face {
   font-family: "MinecraftSeven-v2";
   src: url("../assets/fonts/Minecraft-Seven_v2.otf") format("opentype");
 }
 
-/*
-  Segunda fonte minecraft
-*/
+/*fonte minecraft 2*/
 @font-face {
   font-family: "MinecraftSeven";
   src: url("../assets/fonts/MinecraftSeven.ttf") format("truetype");
 }
 
-/*
-  Body da paágina
-*/
+/*body da página*/
 body {
   background-color: #1e1e1e;
   font-family: "Noto Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: white;
 }
 
-/*
-  Remove os marcadores das listas
-*/
+/*remove os marcadores das listas*/
 ul {
   list-style: none;
 }
 
-/*
-  Remove sublinhado dos links
-*/
+/*remove sublinhado dos links*/
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/*
-  Wrapper principal da página
-*/
+/*wrapper principal da pagina*/
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -59,9 +43,7 @@ a {
 }
 
 
-/*
-  Cabeçalho
-*/
+/*cabeçalho*/
 header {
   width: 100%;
   min-height: 92px;
@@ -76,35 +58,27 @@ header {
   
 }
 
-/*
-  Logo principal
-*/
+/*logo principal*/
 .logo {
   width: 230px;
   display: block;
 }
 
-/*
-  Menu principal PC
-*/
+/*menu principal PC*/
 .menu {
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
-/*
-  Menu 2 DIREITA
-*/
+/*menu 2 DIREITA*/
 .menu2 {
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
-/*
-  Itens dos menus (linhas)
-*/
+/*itens dos menus (linhas)*/
 .menu li,
 .menu2 li {
   display: flex;
@@ -118,18 +92,14 @@ header {
   cursor: pointer;
 }
 
-/*
-  Classe original usada nos itens que possuem seta
-*/
+/*classe usada nos itens que possuem seta*/
 .seta {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-/*
-  Botão comprar pc
-*/
+/*botão comprar pc*/
 .menu2 .comprar {
   border: 2px solid #69b52f;
   color: #69b52f;
@@ -137,45 +107,35 @@ header {
   font-weight: 700;
 }
 
-/*
-  Ícone de seta para baixo
-*/
+/*icone de seta para baixo*/
 .chevron-down {
   width: 12px;
   height: 12px;
   display: block;
 }
 
-/*
-  Ícone de pesquisa
-*/
+/*ícone de pesquisa*/
 .icone-pesquisa {
   width: 20px;
   height: 20px;
   display: block;
 }
 
-/*
-  Área da conta no menu direito
-*/
+/*área da conta no menu direito*/
 .menu2 .conta {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-/*
-  Ícone de usuário
-*/
+/*icone de usuário*/
 .pixel-user-white {
   width: 18px;
   height: 18px;
   display: block;
 }
 
-/*
-  Menu do celular (nao aparece no pc)
-*/
+/*menu do celular (nao aparece no pc)*/
 .menu-mobile {
   display: none;
   align-items: center;
@@ -183,9 +143,7 @@ header {
   
 }
 
-/*
-  Botão comprar no celular
-*/
+/*botão comprar no celular*/
 .comprar-mobile {
   border: 2px solid #69b52f;
   color: #69b52f;
@@ -199,9 +157,7 @@ header {
   gap: 8px;
 }
 
-/*
-  Botão que segura o SVG do menu hambúrguer
-*/
+/*botão que segura o SVG do menu hambúrguer*/
 .botao-menu {
   border: none;
   background: transparent;
@@ -213,20 +169,14 @@ header {
   justify-content: center;
 }
 
-/*
-  Ícone SVG do menu hambúrguer
-*/
+/*ícone SVG do menu hambúrguer*/
 .icone-menu {
   width: 38px;
   height: 34px;
   display: block;
 }
 
-/* sessão do vídeo
-
-/*
-  Section principal do banner
-*/
+/* sessão do vídeo*/
 .banner {
   width: 100%;
   margin: 0 auto;
@@ -234,9 +184,7 @@ header {
   overflow: hidden;
 }
 
-/*
-  Caixa que segura o vídeo
-*/
+/*caixa/container que segura o vídeo*/
 .video-box {
   width: 100%;
   height: 555px;
@@ -245,9 +193,7 @@ header {
   background-color: #000;
 }
 
-/*
-  Vídeo principal minecraft
-*/
+/*vídeo principal minecraft*/
 .back-video {
   width: 100%;
   height: 100%;
@@ -255,9 +201,7 @@ header {
   display: block;
 }
 
-/*
-  Botão lateral play
-*/
+/*Botão lateral play*/
 .botao-play {
   position: absolute;
   top: 18px;
@@ -273,9 +217,7 @@ header {
   justify-content: center;
 }
 
-/*
-  Triângulo dentro do play
-*/
+/*triângulo dentro do play*/
 .botao-play::before {
   content: "";
 
@@ -286,9 +228,7 @@ header {
   margin-left: 3px;
 }
 
-/*
-  Parte inferior do banner.
-*/
+/*parte inferior do banner.*/
 .area-inferior{
   margin-top: -190px;
   padding-bottom: 30px;
@@ -296,9 +236,7 @@ header {
   z-index: 3;
 }
 
-/*
-  Caixa preta de texto.
-*/
+/*caixa(box) preta*/
 .text {
   width: 480px;
   background-color: #111111;
@@ -310,22 +248,13 @@ header {
   border-top: 4px solid #313131;
 }
 
-/*
-  Agrupamento dos quadradinhos.
-  Mantive o nome original .boxs.
-*/
-
-/*
-  Área do título.
-*/
+/*titulo*/
 .titulo-box {
   position: relative;
   margin-bottom: 10px;
 }
 
-/*
-  Título do card.
-*/
+/*h2 card*/
 h2 {
   font-family:
     "MinecraftSeven-v2",
@@ -342,9 +271,7 @@ h2 {
   font-weight: normal;
 }
 
-/*
-  Texto do card.
-*/
+/*paragrafo card*/
 p {
   color: #f1f1f1;
   font-size: 1rem;
@@ -353,13 +280,11 @@ p {
 }
 
 
-/* ALTERAÇÕES PRA O CELULAR */
+/* CELULAR */
 
 @media only screen and (max-width: 600px) {
 
-  /*
-    Header menor no celular
-  */
+  /*header menor*/
 
   html,
   body {
@@ -372,73 +297,54 @@ p {
     padding: 0 14px;
   }
 
-  /*
-    Logo menor no celular
-  */
+  /*logo menor */
   .logo {
     width: 170px;
   }
 
-  /*
-    Esconde os menus grandes 
-  */
+  /*esconde menus pc*/
   .menu,
   .menu2 {
     display: none;
   }
 
-  /*
-    Mostra o menu mobile
-  */
+  /*mostra o menu celular*/
   .menu-mobile {
     display: flex;
   }
 
-  /*
-    video ocupa 100% da tela no celular
-  */
+  /*video ocupa a tela inteira*/
   .banner {
     width: 100%;
     margin: 0;
     background-color: #111;
   }
 
-  /*
-    Altura do vídeo nova
-  */
+  /*altura do vídeo*/
   .video-box {
     height: 420px;
   }
 
-  /*
-    Ajusta o vídeo no celular.
-  */
+  /*altera o video*/
   .back-video {
     object-fit: cover;
     object-position: center;
   }
 
-  /*
-    Botão lateral menor no celular.
-  */
+  /*botão lateral menor*/
   .botao-proximo {
     top: 10px;
     width: 34px;
     height: 34px;
   }
 
-  /*
-    No celular o card não fica sobreposto.
-    Ele aparece abaixo do vídeo.
-  */
+  /*card abaixo do vídeo.*/
   .area-inferior{
     margin-top: 0;
     padding-bottom: 0;
   }
 
-  /*
-    Caixa preta ocupa toda a largura no celular.
-  */
+  /*caixa(box) preta ocupa toda a largura*/
   .text {
     width: 100%;
     margin-left: 0;
@@ -447,25 +353,15 @@ p {
     border-top: 4px solid #313131;
   }
 
-  /*
-    Esconde os quadradinhos no celular.
-  */
-  .boxs {
-    display: none;
-  }
 
-  /*
-    Centraliza o título no celular.
-  */
+  /*centraliza o título*/
   .titulo-box {
     text-align: center;
     padding: 0 16px;
     margin-bottom: 16px;
   }
 
-  /*
-    Linha esquerda do título no celular.
-  */
+  /*linha esquerda do título*/
   .titulo-box::before {
     content: "";
     position: absolute;
@@ -479,9 +375,7 @@ p {
     background-color: #444;
   }
 
-  /*
-    Linha direita do título no celular.
-  */
+  /*linha direita*/
   .titulo-box::after {
     content: "";
     position: absolute;
@@ -495,17 +389,13 @@ p {
     background-color: #444;
   }
 
-  /*
-    Título menor no celular.
-  */
+  /*título menor*/
   h2 {
     font-size: 1.5rem;
     line-height: 1.3;
   }
 
-  /*
-    Texto centralizado no celular.
-  */
+  /*texto centralizado*/
   p {
     text-align: center;
     font-size: 0.95rem;
