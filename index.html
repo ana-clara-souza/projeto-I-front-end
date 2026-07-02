@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- responsividade para celular -->
+  <!--responsividade para celular -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Bem-vindos ao site oficial do Minecraft | Minecraft</title>
 
   <!-- CSS externo-->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript -->
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -50,7 +53,7 @@
         </li>
       </ul>
 
-      <!-- menu que abre -->
+      <!--menu que abre -->
       <ul class="menu2">
         <li class="comprar">
           COMPRAR AGORA
@@ -58,7 +61,7 @@
         </li>
 
         <li>
-          <img src="assets/icons/icon-search.svg" class="icone-pesquisa" alt="Pesquisar">
+          <img src="assets/icons/icon-search.svg" class="icone-pesquisa" id="btnPesquisaCabecalho" alt="Pesquisar">
           <img src="assets/icons/icon-chevron-down.svg" class="chevron-down" alt="">
         </li>
 
@@ -69,7 +72,7 @@
         </li>
       </ul>
 
-      <!-- menu para celular -->
+      <!--menu para celular -->
       <div class="menu-mobile">
         <a href="#" class="comprar-mobile">
           COMPRAR
@@ -83,25 +86,25 @@
 
     </header>
 
-    <!-- area principal do banner -->
+    <!--area principal do banner -->
     <main>
 
       <section class="banner">
 
-        <!-- area do video -->
+        <!--area do video -->
         <div class="video-box">
           <video autoplay muted loop class="back-video">
             <source src="assets/videos/video.mp4" type="video/mp4">
           </video>
 
-          <!-- botao com triangulo -->
+          <!--botao com triangulo -->
           <div class="botao-play"></div>
         </div>
 
-        <!-- parte inferior do banner -->
+        <!--parte inferior do banner -->
         <div class="area-inferior">
 
-          <!-- caixa preta de texto -->
+          <!--caixa preta de texto -->
           <div class="text">
 
             <div class="titulo-box">
@@ -120,7 +123,56 @@
 
       </section>
 
+  <!--encantamentos -->
+  <section class="encantamentos">
+
+    <div class="encantamentos-titulo">
+      <h2>Encantamentos do Minecraft</h2>
+      <p>Pesquise encantamentos, descubra seus efeitos e salve seus favoritos.</p>
+    </div>
+
+    <div class="pesquisa-box">
+
+      <input
+        type="text"
+        id="campoBusca"
+        placeholder="Digite o nome do encantamento">
+
+      <button id="btnBuscar">
+        Buscar
+      </button>
+
+    </div>
+
+    <div id="mensagem"></div>
+
+  </section>
+  <!-- resultados-->
+  <section class="resultado">
+
+    <div class="resultado-titulo">
+      <h2>Resultados</h2>
+    </div>
+
+    <div id="resultado-container"></div>
+
+  </section>
+  
+  <!--favoritos-->
+  
+  <section class="favoritos">
+
+    <div class="favoritos-titulo">
+      <h2>Favoritos</h2>
+    </div>
+
+    <div id="favoritos-container"></div>
+
+  </section>
+
     </main>
+
+    
 
   </div>
 
